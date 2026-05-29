@@ -1,4 +1,4 @@
-# DevOps Automatin Scripts
+# DevOps Automation Scripts
 
 ![Bash Lintig](https://github.com/serpronichev/devops-auto/actions/workflows/lint.yml/badge.svg)
 
