@@ -1,4 +1,4 @@
-name: Bash Linting
+name: CI Lint and Test
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  lint:
+  lint-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,3 +15,6 @@ jobs:
 
       - name: Run Shellcheck
         uses: ludeeus/action-shellcheck@master
+
+      - name: Run BATS tests
+        uses: bats-core/bats-action@v3
