@@ -16,5 +16,10 @@ jobs:
       - name: Run Shellcheck
         uses: ludeeus/action-shellcheck@master
 
+      - name: Install Bats
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bats
+
       - name: Run BATS tests
         uses: bats-core/bats-action@v3
